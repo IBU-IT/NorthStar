@@ -1,12 +1,6 @@
 <b>(Northstar)</b>
 
-Team Members :
-
-Muhammed Hasanović  		
-Berina Dervišić 				
-Azra Ajdinović  				
-Aldin Bećić  				
-Emina Šahbegovic			
+<p style="font-size:30px">JAVA GAME PROJECT: <b>HANGMAN</b></p>
 
 As the application starts, it will display the name of the developer team and then the name of the game. Then, an intro screen, i.e. Main Menu, will display the Play, View Scoreboard, Instructions of Play and Exit Game options (or buttons). 
 
