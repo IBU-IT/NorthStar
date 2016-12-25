@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 public class Av {
 	
+	
 @SuppressWarnings("serial")
 public class Hang extends JFrame{
 		
