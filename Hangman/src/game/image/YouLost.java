@@ -1,4 +1,4 @@
-package ba.edu.ibu.oop;
+package game.image;
 
 import java.awt.*;
 import javax.swing.JFrame;
