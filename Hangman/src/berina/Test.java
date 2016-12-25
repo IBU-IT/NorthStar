@@ -1,5 +1,4 @@
 package berina;
-
 import javax.swing.JFrame;
 
 public class Test {

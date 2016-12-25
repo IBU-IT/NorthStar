@@ -1,6 +1,5 @@
 package berina;
 import javax.swing.*;
-
 import javax.swing.JMenuBar;
 import java.awt.Font;
 import javax.swing.JMenu;
