@@ -1,4 +1,4 @@
-package berina;
+package hangman;
 import javax.swing.JFrame;
 
 public class Test {

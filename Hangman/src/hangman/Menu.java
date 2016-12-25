@@ -1,4 +1,4 @@
-package berina;
+package hangman;
 import javax.swing.*;
 import javax.swing.JMenuBar;
 import java.awt.Font;

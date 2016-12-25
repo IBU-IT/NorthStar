@@ -1,4 +1,4 @@
-package berina;
+package hangman;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
