@@ -147,13 +147,7 @@ public class Menu extends JPanel {
 			setForeground(Color.RED);
 			setToolTipText("");
 			setLayout(null);
-			
-			
 
-			//********************************************************************************
-			//themes
-			//********************************************************************************
-			// get installed look-and-feel information
 			looks = UIManager.getInstalledLookAndFeels();
 			lookNames = new String[ looks.length ];
 			
@@ -438,20 +432,11 @@ public class Menu extends JPanel {
 			});
 			Help.add(help_detail);
 			
-			JMenuItem About = new JMenuItem("About");
-			About.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent event) {
-					JOptionPane.showMessageDialog(null,"Programming by\n"
-							+"Muhammad Saad\n"
-							+"Gik Institute (Topi,Pakistan)\n"
-							+"03329198694\n"
-							+"muhammad.saad42@yahoo.com","About",JOptionPane.INFORMATION_MESSAGE);
-				}
-			});
+			
 			
 			JSeparator separator_1 = new JSeparator();
 			Help.add(separator_1);
-			Help.add(About);
+		
 			
 			JPanel zxcvb = new JPanel();
 			zxcvb.setBounds(129, 546, 688, 41);
@@ -819,11 +804,7 @@ public class Menu extends JPanel {
 			//label.setText(temp);
 		}//end process
 		
-		
-		//*****************************************************************************
-		//key handler class
-		//*****************************************************************************
-		
+	
 		private class keyHandler implements ActionListener{
 			public void actionPerformed(ActionEvent event){
 				
@@ -926,10 +907,6 @@ public class Menu extends JPanel {
 			}
 		}
 
-		//*********************************************************
-		//theme handler
-		//*********************************************************
-		
 		private void changeTheLookAndFeel( int value ){
 			try // change look-and-feel
 			{
