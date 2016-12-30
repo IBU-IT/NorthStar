@@ -72,7 +72,7 @@ public class GUI {
 		frmHangman.getContentPane().setLayout(null);
 		
 		textField = new JTextField();
-		textField.setBounds(248, 546, 419, 70);
+		textField.setBounds(245, 544, 419, 70);
 		frmHangman.getContentPane().add(textField);
 		textField.setBorder(null);
 		textField.setOpaque(false);
@@ -82,14 +82,14 @@ public class GUI {
 		txtChooseACategory.setForeground(new Color(165, 42, 42));
 		txtChooseACategory.setText("ENTER YOUR NAME:");
 		txtChooseACategory.setFont(new Font("Kelmscott", Font.PLAIN, 42));
-		txtChooseACategory.setBounds(220, 433, 529, 87);
+		txtChooseACategory.setBounds(223, 429, 529, 87);
 		txtChooseACategory.setOpaque(false);
 		txtChooseACategory.setBorder(null);
 		frmHangman.getContentPane().add(txtChooseACategory);
 		txtChooseACategory.setColumns(10);
 		
 		JLabel lblNewLabel_2 = new JLabel("");
-		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\Porodica Solo\\Desktop\\buttons\\home naslov.png"));
+		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\Porodica Solo\\Desktop\\Programming project\\bgr\\buttons\\home naslov.png"));
 		lblNewLabel_2.setBounds(0, 0, 894, 865);
 		frmHangman.getContentPane().add(lblNewLabel_2);
 		//txtEnterYourName.setContentAreaFilled(false);
