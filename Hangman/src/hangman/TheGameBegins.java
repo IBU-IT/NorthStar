@@ -211,10 +211,10 @@ public class TheGameBegins{
 		button.setBounds(67, 214, 151, 34);
 		frame2.getContentPane().add(button);
 		
-		JLabel label_2 = new JLabel("");
+		JLabel label_2 = 	new JLabel("");
 		label_2.setBounds(0, 0, 892, 863);
 		frame2.getContentPane().add(label_2);
-		label_2.setIcon(new ImageIcon("C:\\Users\\COMTRADE\\Desktop\\thegamebeginsbgr.jpg"));
+		label_2.setIcon(new ImageIcon("C:\\Users\\COMTRADE\\Desktop\\buttons\\thegamebeginsbgr.jpg"));
 		label_2.setForeground(new Color(46, 139, 87));
 		label_2.setBackground(new Color(255, 153, 255));
 

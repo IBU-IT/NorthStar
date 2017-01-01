@@ -133,7 +133,7 @@ public class ChooseCategory {
 				StuffWeNeed.CAT = 6;
 				new TheGameBegins();
 				frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-				frame1.setVisible(false);
+				frame1.setVisible(true);
 			}
 		});
 		btnNewButton_5.setBounds(504, 628, 213, 64);
@@ -142,7 +142,7 @@ public class ChooseCategory {
 		lblNewLabel = new JLabel("");
 		lblNewLabel.setBackground(new Color(255, 153, 255));
 		lblNewLabel.setForeground(new Color(46, 139, 87));
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\COMTRADE\\Desktop\\category.jpg"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\COMTRADE\\Desktop\\buttons\\category.jpg"));
 		lblNewLabel.setBounds(0, 0, 892, 863);
 		frame1.getContentPane().add(lblNewLabel);
 	}
