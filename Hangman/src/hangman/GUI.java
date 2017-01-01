@@ -89,7 +89,7 @@ public class GUI {
 		txtChooseACategory.setColumns(10);
 		
 		JLabel lblNewLabel_2 = new JLabel("");
-		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\Porodica Solo\\Desktop\\Programming project\\bgr\\buttons\\home naslov.png"));
+		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\COMTRADE\\Desktop\\bgr\\Design and Art\\begraund.png"));
 		lblNewLabel_2.setBounds(0, 0, 894, 865);
 		frmHangman.getContentPane().add(lblNewLabel_2);
 		//txtEnterYourName.setContentAreaFilled(false);
