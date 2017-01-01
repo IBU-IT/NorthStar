@@ -26,7 +26,6 @@ public class ChooseCategory {
 	private JButton btnNewButton_3;
 	private JButton btnNewButton_4;
 	private JButton btnNewButton_5;
-	private JTextField txtChooseCat;
 	private JLabel lblNewLabel;
 	/**
 	 * Launch the application.
@@ -62,6 +61,7 @@ public class ChooseCategory {
 		frame1.getContentPane().setLayout(null);
 		
 		btnNewButton = new JButton("COUNTRIES");
+		btnNewButton.setIcon(new ImageIcon("C:\\Users\\COMTRADE\\Desktop\\buttons\\countries.png"));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				StuffWeNeed.CAT = 1; // varijabla CAT u klasi StuffWeNeed sluzi da se odredi koja kategorija je izabrana,ako pritisnemo 
@@ -70,11 +70,12 @@ public class ChooseCategory {
 				frame1.setVisible(false);
 			}
 		});
-		btnNewButton.setBounds(109, 249, 223, 64);
+		btnNewButton.setBounds(109, 243, 213, 58);
 		frame1.getContentPane().add(btnNewButton);
 
 		
 		btnNewButton_1 = new JButton("CITIES");
+		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\COMTRADE\\Desktop\\buttons\\cities.png"));
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				StuffWeNeed.CAT = 2;
@@ -83,10 +84,11 @@ public class ChooseCategory {
 				frame1.setVisible(false);
 			}
 		});
-		btnNewButton_1.setBounds(109, 422, 223, 64);
+		btnNewButton_1.setBounds(109, 422, 213, 64);
 		frame1.getContentPane().add(btnNewButton_1);
 		
 		btnNewButton_2 = new JButton("VEGETABLES");
+		btnNewButton_2.setIcon(new ImageIcon("C:\\Users\\COMTRADE\\Desktop\\buttons\\vegetables.png"));
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				StuffWeNeed.CAT = 3;
@@ -95,10 +97,11 @@ public class ChooseCategory {
 				frame1.setVisible(false);
 			}
 		});
-		btnNewButton_2.setBounds(109, 628, 223, 64);
+		btnNewButton_2.setBounds(109, 628, 213, 64);
 		frame1.getContentPane().add(btnNewButton_2);
 		
 		btnNewButton_3 = new JButton("MOVIES");
+		btnNewButton_3.setIcon(new ImageIcon("C:\\Users\\COMTRADE\\Desktop\\buttons\\movies.png"));
 		btnNewButton_3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				StuffWeNeed.CAT = 4;
@@ -107,10 +110,11 @@ public class ChooseCategory {
 				frame1.setVisible(false);
 			}
 		});
-		btnNewButton_3.setBounds(501, 249, 223, 64);
+		btnNewButton_3.setBounds(510, 242, 207, 61);
 		frame1.getContentPane().add(btnNewButton_3);
 		
 		btnNewButton_4 = new JButton("FRUITS");
+		btnNewButton_4.setIcon(new ImageIcon("C:\\Users\\COMTRADE\\Desktop\\buttons\\fruits.png"));
 		btnNewButton_4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				StuffWeNeed.CAT = 5;
@@ -119,10 +123,11 @@ public class ChooseCategory {
 				frame1.setVisible(false);
 			}
 		});
-		btnNewButton_4.setBounds(501, 422, 223, 64);
+		btnNewButton_4.setBounds(501, 422, 216, 64);
 		frame1.getContentPane().add(btnNewButton_4);
 		
 		btnNewButton_5 = new JButton("OBJECTS");
+		btnNewButton_5.setIcon(new ImageIcon("C:\\Users\\COMTRADE\\Desktop\\buttons\\objects.png"));
 		btnNewButton_5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				StuffWeNeed.CAT = 6;
@@ -131,23 +136,13 @@ public class ChooseCategory {
 				frame1.setVisible(false);
 			}
 		});
-		btnNewButton_5.setBounds(501, 628, 223, 64);
+		btnNewButton_5.setBounds(504, 628, 213, 64);
 		frame1.getContentPane().add(btnNewButton_5);
 		
-		txtChooseCat = new JTextField();
-		txtChooseCat.setForeground(new Color(0, 0, 0));
-		txtChooseCat.setFont(new Font("Kelmscott", Font.BOLD, 44));
-		txtChooseCat.setText("CHOOSE A CATEGORY");
-		txtChooseCat.setHorizontalAlignment(SwingConstants.CENTER);
-		txtChooseCat.setBounds(131, 35, 634, 64);
-		txtChooseCat.setOpaque(false);
-		txtChooseCat.setBorder(null);
-		frame1.getContentPane().add(txtChooseCat);
-		txtChooseCat.setColumns(10);
-		
 		lblNewLabel = new JLabel("");
+		lblNewLabel.setBackground(new Color(255, 153, 255));
 		lblNewLabel.setForeground(new Color(46, 139, 87));
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Porodica Solo\\Desktop\\Programming project\\bgr\\buttons\\kafi.png"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\COMTRADE\\Desktop\\category.jpg"));
 		lblNewLabel.setBounds(0, 0, 892, 863);
 		frame1.getContentPane().add(lblNewLabel);
 	}
