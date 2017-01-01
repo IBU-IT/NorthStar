@@ -41,10 +41,6 @@ public class TheGameBegins{
 			
 	private JFrame frame2;
 	private JTextField textField;
-	private JTextField txtUsedLetters;
-	private JPanel panel_1;
-	private JTextField txtChances;
-	private JTextField textField_2;
 	private JLabel lblNewLabel;
 	private JLabel lblNewLabel_1;
 	private JLabel lblNewLabel_2;
@@ -69,6 +65,9 @@ public class TheGameBegins{
     private int wordLength;
     private char chosenLetter;
     char[] lettersArr = new char[wordLength];
+    private JTextField textField_1;
+    private JButton button;
+    private JTextField textField_3;
 	/**
 	 * Launch the application.
 	 */
@@ -102,6 +101,13 @@ public class TheGameBegins{
 		frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame2.getContentPane().setLayout(null);
 		
+		textField_3 = new JTextField();
+		textField_3.setBackground(new Color(255, 255, 255));
+		textField_3.setForeground(new Color(0, 0, 0));
+		textField_3.setColumns(10);
+		textField_3.setBounds(630, 229, 128, 75);
+		frame2.getContentPane().add(textField_3);
+		
 		JPanel panel = new JPanel();
 		panel.setBounds(81, 37, 690, 86);
 		panel.setBackground(new Color(255, 255, 255));
@@ -112,6 +118,10 @@ public class TheGameBegins{
 		lblNewLabel = new JLabel("New label");
 		lblNewLabel.setBounds(0, -3, 56, 89);
 		panel.add(lblNewLabel);
+		
+		JLabel lblNewLabel_12 = new JLabel("New label");
+		lblNewLabel_12.setBounds(0, 0, 56, 16);
+		panel.add(lblNewLabel_12);
 		
 		label = new JLabel("");
 		label.setBounds(336, 13, 0, 0);
@@ -138,7 +148,7 @@ public class TheGameBegins{
 		panel.add(lblNewLabel_4);
 		
 		lblNewLabel_5 = new JLabel("New label");
-		lblNewLabel_5.setBounds(285, -3, 56, 89);
+		lblNewLabel_5.setBounds(297, -3, 56, 89);
 		panel.add(lblNewLabel_5);
 		
 		lblNewLabel_6 = new JLabel("New label");
@@ -166,36 +176,12 @@ public class TheGameBegins{
 		panel.add(lblNewLabel_11);
 		
 		textField = new JTextField();
-		textField.setBounds(81, 699, 151, 112);
+		textField.setBounds(81, 710, 151, 75);
 		frame2.getContentPane().add(textField);
 		textField.setColumns(10);
 		
-		txtUsedLetters = new JTextField();
-		txtUsedLetters.setBounds(81, 644, 151, 52);
-		txtUsedLetters.setHorizontalAlignment(SwingConstants.CENTER);
-		txtUsedLetters.setText("USED LETTERS");
-		frame2.getContentPane().add(txtUsedLetters);
-		txtUsedLetters.setColumns(10);
-		
-		panel_1 = new JPanel();
-		panel_1.setBorder(new CompoundBorder());
-		panel_1.setBounds(613, 167, 158, 144);
-		frame2.getContentPane().add(panel_1);
-		panel_1.setLayout(null);
-		
-		textField_2 = new JTextField();
-		textField_2.setBounds(12, 53, 134, 78);
-		panel_1.add(textField_2);
-		textField_2.setColumns(10);
-		
-		txtChances = new JTextField();
-		txtChances.setText("CHANCES");
-		txtChances.setHorizontalAlignment(SwingConstants.CENTER);
-		txtChances.setBounds(12, 13, 134, 34);
-		panel_1.add(txtChances);
-		txtChances.setColumns(10);
-		
 		JButton btnNewButton = new JButton("START");
+		btnNewButton.setIcon(new ImageIcon("C:\\Users\\COMTRADE\\Desktop\\buttons\\start.png"));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
@@ -212,8 +198,25 @@ public class TheGameBegins{
 				}
 			}
 		});
-		btnNewButton.setBounds(81, 167, 151, 34);
+		btnNewButton.setBounds(67, 167, 135, 34);
 		frame2.getContentPane().add(btnNewButton);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(283, 712, 151, 75);
+		frame2.getContentPane().add(textField_1);
+		textField_1.setColumns(10);
+		
+		button = new JButton("START");
+		button.setIcon(new ImageIcon("C:\\Users\\COMTRADE\\Desktop\\buttons\\buyletter.png"));
+		button.setBounds(67, 214, 151, 34);
+		frame2.getContentPane().add(button);
+		
+		JLabel label_2 = new JLabel("");
+		label_2.setBounds(0, 0, 892, 863);
+		frame2.getContentPane().add(label_2);
+		label_2.setIcon(new ImageIcon("C:\\Users\\COMTRADE\\Desktop\\thegamebeginsbgr.jpg"));
+		label_2.setForeground(new Color(46, 139, 87));
+		label_2.setBackground(new Color(255, 153, 255));
 
 }//end of initialize class
 	
